@@ -1,0 +1,6 @@
+{
+  "name": "Lahijan Tea - A Pixel-Art Journey",
+  "description": "An authentic pixel-art web experience honoring Iranian Lahijan tea, featuring retro 16-bit aesthetics, interactive brewing simulator, and tea store.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-silkscreen: 'Silkscreen', monospace;
+    --font-pixel: 'Press Start 2P', monospace;
+    --font-vt: 'VT323', monospace;
+    --font-persian: 'Lalezar', cursive, system-ui;
+    --font-persian-body: 'Vazirmatn', sans-serif;
+  }
+
+  body {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Pixel Art Custom Typography */
+.font-pixel-title {
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: -0.05em;
+}
+
+.font-pixel-sub {
+  font-family: 'Silkscreen', monospace;
+}
+
+.font-persian-pixel {
+  font-family: 'Lalezar', cursive;
+  letter-spacing: 0.02em;
+}
+
+.font-persian-text {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+/* Authentic Pixel Borders */
+.pixel-box-green {
+  background-color: #0d281e;
+  border: 3px solid #1f4e38;
+  box-shadow: 
+    3px 3px 0px #06150f,
+    -1px -1px 0px #2a694b inset;
+}
+
+.pixel-box-card {
+  background-color: #e9dfca;
+  border: 3px solid #6b5034;
+  box-shadow: 
+    4px 4px 0px #281d11,
+    -2px -2px 0px #faeccd inset,
+    2px 2px 0px #ab8256 inset;
+}
+
+.pixel-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lalezar', cursive;
+  font-size: 1.1rem;
+  background-color: #1e452e;
+  color: #c9efba;
+  border: 3px solid #5fa44b;
+  box-shadow: 
+    0 4px 0 #0d2317,
+    0 0 0 1px #112d1e;
+  transition: all 0.08s steps(2);
+  cursor: pointer;
+}
+
+.pixel-btn-primary:hover {
+  background-color: #265539;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 0 #0d2317,
+    0 0 0 1px #112d1e;
+}
+
+.pixel-btn-primary:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 1px 0 #0d2317,
+    0 0 0 1px #112d1e;
+}
+
+.pixel-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1f16;
+  color: #a7e098;
+  border: 2px solid #3c7d54;
+  box-shadow: 3px 3px 0 #040d09;
+  transition: all 0.08s steps(2);
+}
+
+.pixel-btn-outline:hover {
+  background-color: #133324;
+  border-color: #55b277;
+  transform: translateY(-1px);
+}
+
+.pixel-btn-outline:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 0 #040d09;
+}
+
+/* Stepped pixel steam animation */
+@keyframes pixel-steam {
+  0% { transform: translateY(0px) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-8px) scale(1.15) translateX(3px); opacity: 0.5; }
+  100% { transform: translateY(-16px) scale(1.3) translateX(-2px); opacity: 0; }
+}
+
+.animate-pixel-steam {
+  animation: pixel-steam 2.2s steps(6) infinite;
+}
+
+@keyframes pixel-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-pixel-bob {
+  animation: pixel-bob 2.4s steps(4) infinite;
+}
+
+/* Custom scrollbar in pixel aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #081510;
+}
+::-webkit-scrollbar-thumb {
+  background: #25583d;
+  border: 2px solid #081510;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3c825b;
+}
+
+/* Pixel art checkerboard accent ribbon */
+.pixel-ribbon {
+  background-image: 
+    linear-gradient(45deg, #133224 25%, transparent 25%), 
+    linear-gradient(-45deg, #133224 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #133224 75%), 
+    linear-gradient(-45deg, transparent 75%, #133224 75%);
+  background-size: 8px 8px;
+  background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+}
+
+/* Vintage parchment texture dots */
+.pixel-parchment-pattern {
+  background-color: #eedebd;
+  background-image: radial-gradient(#d3be92 15%, transparent 16%);
+  background-size: 6px 6px;
+}
